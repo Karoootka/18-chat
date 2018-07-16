@@ -22,7 +22,7 @@ class UserForm extends Component {
 
   render() {
     return (
-      <form className={styles.UserForm} onSubmit={e => this.hanleSubmit(e)}>
+      <form className={styles.UserForm} onSubmit={e => this.handleSubmit(e)}>
         <input
           className={styles.UserInput}
           placeHolder='Write your nickname and press enter'

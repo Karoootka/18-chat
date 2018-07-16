@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import io from 'socke.io-client';
+import io from 'socket.io-client';
 
 import styles from './App.css';
 

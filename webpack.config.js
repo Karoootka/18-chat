@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env) => {
   return {
-    mode: env,
     entry: (env !== 'production' ? [
           'react-hot-loader/patch',
           'webpack-dev-server/client?http://localhost:8080',
@@ -37,7 +36,7 @@ module.exports = (env) => {
       ]
     },
     plugins: [new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'public/index.html',
       filename: 'index.html',
       inject: 'body'
     })]
