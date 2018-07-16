@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-const UsersService = require('.UsersService');
+const UsersService = require('./UsersService');
 const userService = new UsersService();
 
 app.use(express.static(__dirname + '/public'));
@@ -23,7 +23,7 @@ io.on('connection', function(socket) {
       name
     });
     io.emit('update', {
-      users: userService.getAllUsers();
+      users: userService.getAllUsers()
     });
   });
 
