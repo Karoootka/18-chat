@@ -1,8 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = (env) => {
-  return {
+let env = process.env.NODE_ENV || 'development';
+
+module.exports = {
     entry: (env !== 'production' ? [
           'react-hot-loader/patch',
           'webpack-dev-server/client?http://localhost:8080',
@@ -36,9 +37,8 @@ module.exports = (env) => {
       ]
     },
     plugins: [new HtmlWebpackPlugin({
-      template: 'public/index.html',
+      template: './index.html',
       filename: 'index.html',
       inject: 'body'
     })]
-  }
 };

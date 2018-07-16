@@ -60,60 +60,14 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 41);
+/******/ 	return __webpack_require__(__webpack_require__.s = 38);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (true) {
-  module.exports = __webpack_require__(43);
-} else {
-  module.exports = require('./dist/react-hot-loader.development.js');
-}
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
-module.exports = function (module) {
-	if (!module.webpackPolyfill) {
-		module.deprecate = function () {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function get() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function get() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-	var enterModule = __webpack_require__(0).enterModule;
-
-	enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var g;
 
@@ -135,33 +89,10 @@ try {
 // easier to handle this case. if(!global) { ...}
 
 module.exports = g;
-;
-
-(function () {
-	var reactHotLoader = __webpack_require__(0).default;
-
-	var leaveModule = __webpack_require__(0).leaveModule;
-
-	if (!reactHotLoader) {
-		return;
-	}
-
-	reactHotLoader.register(g, "g", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/webpack/buildin/global.js");
-	leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
-
-    enterModule && enterModule(module);
-})();
+/* 1 */
+/***/ (function(module, exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -348,61 +279,25 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(process, 'process', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(cachedSetTimeout, 'cachedSetTimeout', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(cachedClearTimeout, 'cachedClearTimeout', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(defaultSetTimout, 'defaultSetTimout', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(defaultClearTimeout, 'defaultClearTimeout', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(runTimeout, 'runTimeout', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(runClearTimeout, 'runClearTimeout', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(queue, 'queue', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(draining, 'draining', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(currentQueue, 'currentQueue', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(queueIndex, 'queueIndex', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(cleanUpNextTick, 'cleanUpNextTick', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(drainQueue, 'drainQueue', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(Item, 'Item', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    reactHotLoader.register(noop, 'noop', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/process/browser.js');
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 4 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(44);
+  module.exports = __webpack_require__(40);
 } else {
-  module.exports = __webpack_require__(45);
+  module.exports = __webpack_require__(41);
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Expose `Emitter`.
@@ -561,48 +456,24 @@ Emitter.prototype.listeners = function (event) {
 Emitter.prototype.hasListeners = function (event) {
   return !!this.listeners(event).length;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(Emitter, 'Emitter', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/component-emitter/index.js');
-  reactHotLoader.register(mixin, 'mixin', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/component-emitter/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module dependencies.
  */
 
-var keys = __webpack_require__(67);
-var hasBinary = __webpack_require__(32);
-var sliceBuffer = __webpack_require__(72);
-var after = __webpack_require__(73);
-var utf8 = __webpack_require__(74);
+var keys = __webpack_require__(65);
+var hasBinary = __webpack_require__(31);
+var sliceBuffer = __webpack_require__(70);
+var after = __webpack_require__(71);
+var utf8 = __webpack_require__(72);
 
 var base64encoder;
 if (global && global.ArrayBuffer) {
-  base64encoder = __webpack_require__(75);
+  base64encoder = __webpack_require__(74);
 }
 
 /**
@@ -660,7 +531,7 @@ var err = { type: 'error', data: 'parser error' };
  * Create a blob api even for blob builder when vendor prefixes exist
  */
 
-var Blob = __webpack_require__(76);
+var Blob = __webpack_require__(75);
 
 /**
  * Encodes a packet.
@@ -1194,42 +1065,14 @@ exports.decodePayloadAsBinary = function (data, binaryType, callback) {
     callback(exports.decodePacket(buffer, binaryType, true), i, total);
   });
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(base64encoder, 'base64encoder', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(isAndroid, 'isAndroid', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(isPhantomJS, 'isPhantomJS', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(dontSendBlobs, 'dontSendBlobs', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(packets, 'packets', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(packetslist, 'packetslist', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(err, 'err', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeBase64Object, 'encodeBase64Object', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeArrayBuffer, 'encodeArrayBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeBlobAsArrayBuffer, 'encodeBlobAsArrayBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeBlob, 'encodeBlob', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(tryDecode, 'tryDecode', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(map, 'map', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-parser/lib/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 7 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -1239,12 +1082,6 @@ exports.decodePayloadAsBinary = function (data, binaryType, callback) {
  *
  * 
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 function makeEmptyFunction(arg) {
   return function () {
@@ -1271,31 +1108,478 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-;
 
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
 
-  var leaveModule = __webpack_require__(0).leaveModule;
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function (useSourceMap) {
+	var list = [];
 
-  if (!reactHotLoader) {
-    return;
-  }
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if (item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
 
-  reactHotLoader.register(makeEmptyFunction, "makeEmptyFunction", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/emptyFunction.js");
-  reactHotLoader.register(emptyFunction, "emptyFunction", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/emptyFunction.js");
-  leaveModule(module);
+	// import a list of modules into the list
+	list.i = function (modules, mediaQuery) {
+		if (typeof modules === "string") modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for (var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if (typeof id === "number") alreadyImportedModules[id] = true;
+		}
+		for (i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if (typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if (mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if (mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target) {
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
 })();
 
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(84);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertInto + " " + options.insertAt.before);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = options.transform(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/*
+/*
 object-assign
 (c) Sindre Sorhus
 @license MIT
@@ -1303,12 +1587,6 @@ object-assign
 
 
 /* eslint-disable no-unused-vars */
-
-(function () {
-	var enterModule = __webpack_require__(0).enterModule;
-
-	enterModule && enterModule(module);
-})();
 
 var getOwnPropertySymbols = Object.getOwnPropertySymbols;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -1391,34 +1669,13 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-;
-
-(function () {
-	var reactHotLoader = __webpack_require__(0).default;
-
-	var leaveModule = __webpack_require__(0).leaveModule;
-
-	if (!reactHotLoader) {
-		return;
-	}
-
-	reactHotLoader.register(getOwnPropertySymbols, 'getOwnPropertySymbols', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/object-assign/index.js');
-	reactHotLoader.register(hasOwnProperty, 'hasOwnProperty', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/object-assign/index.js');
-	reactHotLoader.register(propIsEnumerable, 'propIsEnumerable', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/object-assign/index.js');
-	reactHotLoader.register(toObject, 'toObject', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/object-assign/index.js');
-	reactHotLoader.register(shouldUseNative, 'shouldUseNative', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/object-assign/index.js');
-	leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
+/* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -1438,12 +1695,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
  * The invariant message will be stripped in production, but the invariant
  * will remain to ensure logic does not differ in production.
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var validateFormat = function validateFormat(format) {};
 
@@ -1477,31 +1728,14 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(validateFormat, 'validateFormat', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/invariant.js');
-  reactHotLoader.register(invariant, 'invariant', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/invariant.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
+/* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -1511,12 +1745,6 @@ module.exports = invariant;
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 var emptyObject = {};
 
 if (process.env.NODE_ENV !== 'production') {
@@ -1524,35 +1752,13 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = emptyObject;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(emptyObject, 'emptyObject', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/emptyObject.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * This is the web browser implementation of `debug()`.
@@ -1560,7 +1766,7 @@ module.exports = emptyObject;
  * Expose `debug()` as the module.
  */
 
-exports = module.exports = __webpack_require__(59);
+exports = module.exports = __webpack_require__(57);
 exports.log = log;
 exports.formatArgs = formatArgs;
 exports.save = save;
@@ -1726,28 +1932,7 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(useColors, 'useColors', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(formatArgs, 'formatArgs', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(log, 'log', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(save, 'save', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(load, 'load', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(localstorage, 'localstorage', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 12 */
@@ -1807,13 +1992,7 @@ module.exports = function (a, b) {
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * This is the web browser implementation of `debug()`.
@@ -1821,7 +2000,7 @@ module.exports = function (a, b) {
  * Expose `debug()` as the module.
  */
 
-exports = module.exports = __webpack_require__(77);
+exports = module.exports = __webpack_require__(76);
 exports.log = log;
 exports.formatArgs = formatArgs;
 exports.save = save;
@@ -1987,69 +2166,13 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(useColors, 'useColors', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(formatArgs, 'formatArgs', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(log, 'log', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(save, 'save', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(load, 'load', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(localstorage, 'localstorage', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = function (originalModule) {
-	if (!originalModule.webpackPolyfill) {
-		var module = Object.create(originalModule);
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function get() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function get() {
-				return module.i;
-			}
-		});
-		Object.defineProperty(module, "exports", {
-			enumerable: true
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Helpers.
@@ -2194,51 +2317,21 @@ function plural(ms, n, name) {
   }
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(s, 's', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(m, 'm', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(h, 'h', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(d, 'd', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(y, 'y', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(parse, 'parse', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(fmtShort, 'fmtShort', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(fmtLong, 'fmtLong', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  reactHotLoader.register(plural, 'plural', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/ms/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module dependencies.
  */
 
-var debug = __webpack_require__(60)('socket.io-parser');
-var Emitter = __webpack_require__(5);
-var binary = __webpack_require__(62);
-var isArray = __webpack_require__(18);
-var isBuf = __webpack_require__(28);
+var debug = __webpack_require__(58)('socket.io-parser');
+var Emitter = __webpack_require__(3);
+var binary = __webpack_require__(60);
+var isArray = __webpack_require__(17);
+var isBuf = __webpack_require__(27);
 
 /**
  * Protocol version.
@@ -2641,74 +2734,24 @@ function error(msg) {
     data: 'parser error: ' + msg
   };
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(Encoder, 'Encoder', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(ERROR_PACKET, 'ERROR_PACKET', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(encodeAsString, 'encodeAsString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(tryStringify, 'tryStringify', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(encodeAsBinary, 'encodeAsBinary', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(Decoder, 'Decoder', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(decodeString, 'decodeString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(tryParse, 'tryParse', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(BinaryReconstructor, 'BinaryReconstructor', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(error, 'error', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* 17 */
+/***/ (function(module, exports) {
 
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(toString, 'toString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/isarray/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {// browser shim for xmlhttprequest module
 
-var hasCORS = __webpack_require__(65);
+var hasCORS = __webpack_require__(63);
 
 module.exports = function (opts) {
   var xdomain = opts.xdomain;
@@ -2743,24 +2786,18 @@ module.exports = function (opts) {
     } catch (e) {}
   }
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module dependencies.
  */
 
-var parser = __webpack_require__(6);
-var Emitter = __webpack_require__(5);
+var parser = __webpack_require__(4);
+var Emitter = __webpack_require__(3);
 
 /**
  * Module exports.
@@ -2912,30 +2949,13 @@ Transport.prototype.onClose = function () {
   this.readyState = 'closed';
   this.emit('close');
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(Transport, 'Transport', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transport.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
+/* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -2945,13 +2965,7 @@ Transport.prototype.onClose = function () {
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var emptyFunction = __webpack_require__(7);
+var emptyFunction = __webpack_require__(5);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -3003,31 +3017,14 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(warning, 'warning', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/warning.js');
-  reactHotLoader.register(printWarning, 'printWarning', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/warning.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
+/* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -3038,16 +3035,10 @@ module.exports = warning;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 var printWarning = function printWarning() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(46);
+  var ReactPropTypesSecret = __webpack_require__(42);
   var loggedTypeFailures = {};
 
   printWarning = function printWarning(text) {
@@ -3113,32 +3104,14 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(printWarning, 'printWarning', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/prop-types/checkPropTypes.js');
-  reactHotLoader.register(loggedTypeFailures, 'loggedTypeFailures', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/prop-types/checkPropTypes.js');
-  reactHotLoader.register(checkPropTypes, 'checkPropTypes', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/prop-types/checkPropTypes.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -3147,12 +3120,6 @@ module.exports = checkPropTypes;
  */
 
 
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 
@@ -3177,31 +3144,13 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(canUseDOM, 'canUseDOM', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/ExecutionEnvironment.js');
-  reactHotLoader.register(ExecutionEnvironment, 'ExecutionEnvironment', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/ExecutionEnvironment.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -3225,12 +3174,6 @@ module.exports = ExecutionEnvironment;
  * @return {?DOMElement}
  */
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 function getActiveElement(doc) /*?DOMElement*/{
   doc = doc || (typeof document !== 'undefined' ? document : undefined);
   if (typeof doc === 'undefined') {
@@ -3244,30 +3187,13 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(getActiveElement, 'getActiveElement', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/getActiveElement.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -3282,12 +3208,6 @@ module.exports = getActiveElement;
 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -3340,32 +3260,13 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(hasOwnProperty, 'hasOwnProperty', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/shallowEqual.js');
-  reactHotLoader.register(is, 'is', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/shallowEqual.js');
-  reactHotLoader.register(shallowEqual, 'shallowEqual', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/shallowEqual.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -3376,13 +3277,7 @@ module.exports = shallowEqual;
  * 
  */
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var isTextNode = __webpack_require__(49);
+var isTextNode = __webpack_require__(45);
 
 /*eslint-disable no-bitwise */
 
@@ -3408,33 +3303,10 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(containsNode, 'containsNode', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/containsNode.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
-
-    enterModule && enterModule(module);
-})();
+/* 26 */
+/***/ (function(module, exports) {
 
 /**
  * Parses an URI
@@ -3473,35 +3345,12 @@ module.exports = function parseuri(str) {
 
     return uri;
 };
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(re, 're', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/parseuri/index.js');
-    reactHotLoader.register(parts, 'parts', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/parseuri/index.js');
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* WEBPACK VAR INJECTION */(function(global) {
 module.exports = isBuf;
 
 var withNativeBuffer = typeof global.Buffer === 'function' && typeof global.Buffer.isBuffer === 'function';
@@ -3526,52 +3375,27 @@ var isView = function () {
 function isBuf(obj) {
   return withNativeBuffer && global.Buffer.isBuffer(obj) || withNativeArrayBuffer && (obj instanceof global.ArrayBuffer || isView(obj));
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(withNativeBuffer, 'withNativeBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/is-buffer.js');
-  reactHotLoader.register(withNativeArrayBuffer, 'withNativeArrayBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/is-buffer.js');
-  reactHotLoader.register(isView, 'isView', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/is-buffer.js');
-  reactHotLoader.register(isBuf, 'isBuf', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/is-buffer.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var eio = __webpack_require__(63);
-var Socket = __webpack_require__(36);
-var Emitter = __webpack_require__(5);
-var parser = __webpack_require__(17);
-var on = __webpack_require__(37);
-var bind = __webpack_require__(38);
+var eio = __webpack_require__(61);
+var Socket = __webpack_require__(35);
+var Emitter = __webpack_require__(3);
+var parser = __webpack_require__(16);
+var on = __webpack_require__(36);
+var bind = __webpack_require__(37);
 var debug = __webpack_require__(11)('socket.io-client:manager');
-var indexOf = __webpack_require__(35);
-var Backoff = __webpack_require__(82);
+var indexOf = __webpack_require__(34);
+var Backoff = __webpack_require__(81);
 
 /**
  * IE6+ hasOwnProperty
@@ -4130,44 +3954,19 @@ Manager.prototype.onreconnect = function () {
   this.updateSocketIds();
   this.emitAll('reconnect', attempt);
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/manager.js');
-  reactHotLoader.register(has, 'has', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/manager.js');
-  reactHotLoader.register(Manager, 'Manager', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/manager.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module dependencies
  */
 
-var XMLHttpRequest = __webpack_require__(19);
-var XHR = __webpack_require__(66);
-var JSONP = __webpack_require__(78);
-var websocket = __webpack_require__(79);
+var XMLHttpRequest = __webpack_require__(18);
+var XHR = __webpack_require__(64);
+var JSONP = __webpack_require__(77);
+var websocket = __webpack_require__(78);
 
 /**
  * Export transports.
@@ -4213,43 +4012,21 @@ function polling(opts) {
     return new JSONP(opts);
   }
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(polling, 'polling', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module dependencies.
  */
 
-var Transport = __webpack_require__(20);
+var Transport = __webpack_require__(19);
 var parseqs = __webpack_require__(12);
-var parser = __webpack_require__(6);
+var parser = __webpack_require__(4);
 var inherit = __webpack_require__(13);
-var yeast = __webpack_require__(34);
+var yeast = __webpack_require__(33);
 var debug = __webpack_require__(14)('engine.io-client:polling');
 
 /**
@@ -4263,7 +4040,7 @@ module.exports = Polling;
  */
 
 var hasXHR2 = function () {
-  var XMLHttpRequest = __webpack_require__(19);
+  var XMLHttpRequest = __webpack_require__(18);
   var xhr = new XMLHttpRequest({ xdomain: false });
   return null != xhr.responseType;
 }();
@@ -4485,37 +4262,12 @@ Polling.prototype.uri = function () {
   var ipv6 = this.hostname.indexOf(':') !== -1;
   return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling.js');
-  reactHotLoader.register(hasXHR2, 'hasXHR2', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling.js');
-  reactHotLoader.register(Polling, 'Polling', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, Buffer) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(Buffer) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /* global Blob File */
 
@@ -4523,7 +4275,7 @@ Polling.prototype.uri = function () {
  * Module requirements.
  */
 
-var isArray = __webpack_require__(18);
+var isArray = __webpack_require__(17);
 
 var toString = Object.prototype.toString;
 var withNativeBlob = typeof Blob === 'function' || typeof Blob !== 'undefined' && toString.call(Blob) === '[object BlobConstructor]';
@@ -4575,29 +4327,10 @@ function hasBinary(obj) {
 
   return false;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(toString, 'toString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/has-binary2/index.js');
-  reactHotLoader.register(withNativeBlob, 'withNativeBlob', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/has-binary2/index.js');
-  reactHotLoader.register(withNativeFile, 'withNativeFile', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/has-binary2/index.js');
-  reactHotLoader.register(hasBinary, 'hasBinary', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/has-binary2/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(68).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(66).Buffer))
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -4606,17 +4339,11 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split(''),
     length = 64,
@@ -4684,41 +4411,11 @@ for (; i < length; i++) {
 yeast.encode = encode;
 yeast.decode = decode;
 module.exports = yeast;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(alphabet, 'alphabet', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(length, 'length', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(map, 'map', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(seed, 'seed', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(i, 'i', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(prev, 'prev', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(encode, 'encode', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(decode, 'decode', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  reactHotLoader.register(yeast, 'yeast', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/yeast/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 34 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var indexOf = [].indexOf;
 
@@ -4729,48 +4426,25 @@ module.exports = function (arr, obj) {
   }
   return -1;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(indexOf, "indexOf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/indexof/index.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var parser = __webpack_require__(17);
-var Emitter = __webpack_require__(5);
-var toArray = __webpack_require__(81);
-var on = __webpack_require__(37);
-var bind = __webpack_require__(38);
+var parser = __webpack_require__(16);
+var Emitter = __webpack_require__(3);
+var toArray = __webpack_require__(80);
+var on = __webpack_require__(36);
+var bind = __webpack_require__(37);
 var debug = __webpack_require__(11)('socket.io-client:socket');
 var parseqs = __webpack_require__(12);
-var hasBin = __webpack_require__(32);
+var hasBin = __webpack_require__(31);
 
 /**
  * Module exports.
@@ -5190,36 +4864,11 @@ Socket.prototype.binary = function (binary) {
   this.flags.binary = binary;
   return this;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/socket.js');
-  reactHotLoader.register(events, 'events', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/socket.js');
-  reactHotLoader.register(emit, 'emit', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/socket.js');
-  reactHotLoader.register(Socket, 'Socket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/socket.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 36 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module exports.
@@ -5244,33 +4893,10 @@ function on(obj, ev, fn) {
     }
   };
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(on, "on", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/on.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* 37 */
+/***/ (function(module, exports) {
 
 /**
  * Slice reference.
@@ -5295,539 +4921,27 @@ module.exports = function (obj, fn) {
     return fn.apply(obj, args.concat(slice.call(arguments)));
   };
 };
-;
 
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
 
-  var leaveModule = __webpack_require__(0).leaveModule;
+module.exports = __webpack_require__(39);
 
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(slice, 'slice', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/component-bind/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
 /* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-	var enterModule = __webpack_require__(0).enterModule;
-
-	enterModule && enterModule(module);
-})();
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function (useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if (item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function (modules, mediaQuery) {
-		if (typeof modules === "string") modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for (var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if (typeof id === "number") alreadyImportedModules[id] = true;
-		}
-		for (i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if (typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if (mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if (mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-;
-
-(function () {
-	var reactHotLoader = __webpack_require__(0).default;
-
-	var leaveModule = __webpack_require__(0).leaveModule;
-
-	if (!reactHotLoader) {
-		return;
-	}
-
-	reactHotLoader.register(cssWithMappingToString, "cssWithMappingToString", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/css-loader/lib/css-base.js");
-	reactHotLoader.register(toComment, "toComment", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/css-loader/lib/css-base.js");
-	leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-
-var stylesInDom = {};
-
-var	memoize = function (fn) {
-	var memo;
-
-	return function () {
-		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-		return memo;
-	};
-};
-
-var isOldIE = memoize(function () {
-	// Test for IE <= 9 as proposed by Browserhacks
-	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-	// Tests for existence of standard globals is to allow style-loader
-	// to operate correctly into non-standard environments
-	// @see https://github.com/webpack-contrib/style-loader/issues/177
-	return window && document && document.all && !window.atob;
-});
-
-var getTarget = function (target) {
-  return document.querySelector(target);
-};
-
-var getElement = (function (fn) {
-	var memo = {};
-
-	return function(target) {
-                // If passing function in options, then use it for resolve "head" element.
-                // Useful for Shadow Root style i.e
-                // {
-                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
-                // }
-                if (typeof target === 'function') {
-                        return target();
-                }
-                if (typeof memo[target] === "undefined") {
-			var styleTarget = getTarget.call(this, target);
-			// Special case to return head of iframe instead of iframe itself
-			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-				try {
-					// This will throw an exception if access to iframe is blocked
-					// due to cross-origin restrictions
-					styleTarget = styleTarget.contentDocument.head;
-				} catch(e) {
-					styleTarget = null;
-				}
-			}
-			memo[target] = styleTarget;
-		}
-		return memo[target]
-	};
-})();
-
-var singleton = null;
-var	singletonCounter = 0;
-var	stylesInsertedAtTop = [];
-
-var	fixUrls = __webpack_require__(85);
-
-module.exports = function(list, options) {
-	if (typeof DEBUG !== "undefined" && DEBUG) {
-		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-	}
-
-	options = options || {};
-
-	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
-
-	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-	// tags it will allow on a page
-	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
-
-	// By default, add <style> tags to the <head> element
-        if (!options.insertInto) options.insertInto = "head";
-
-	// By default, add <style> tags to the bottom of the target
-	if (!options.insertAt) options.insertAt = "bottom";
-
-	var styles = listToStyles(list, options);
-
-	addStylesToDom(styles, options);
-
-	return function update (newList) {
-		var mayRemove = [];
-
-		for (var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-
-			domStyle.refs--;
-			mayRemove.push(domStyle);
-		}
-
-		if(newList) {
-			var newStyles = listToStyles(newList, options);
-			addStylesToDom(newStyles, options);
-		}
-
-		for (var i = 0; i < mayRemove.length; i++) {
-			var domStyle = mayRemove[i];
-
-			if(domStyle.refs === 0) {
-				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
-
-				delete stylesInDom[domStyle.id];
-			}
-		}
-	};
-};
-
-function addStylesToDom (styles, options) {
-	for (var i = 0; i < styles.length; i++) {
-		var item = styles[i];
-		var domStyle = stylesInDom[item.id];
-
-		if(domStyle) {
-			domStyle.refs++;
-
-			for(var j = 0; j < domStyle.parts.length; j++) {
-				domStyle.parts[j](item.parts[j]);
-			}
-
-			for(; j < item.parts.length; j++) {
-				domStyle.parts.push(addStyle(item.parts[j], options));
-			}
-		} else {
-			var parts = [];
-
-			for(var j = 0; j < item.parts.length; j++) {
-				parts.push(addStyle(item.parts[j], options));
-			}
-
-			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-		}
-	}
-}
-
-function listToStyles (list, options) {
-	var styles = [];
-	var newStyles = {};
-
-	for (var i = 0; i < list.length; i++) {
-		var item = list[i];
-		var id = options.base ? item[0] + options.base : item[0];
-		var css = item[1];
-		var media = item[2];
-		var sourceMap = item[3];
-		var part = {css: css, media: media, sourceMap: sourceMap};
-
-		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
-		else newStyles[id].parts.push(part);
-	}
-
-	return styles;
-}
-
-function insertStyleElement (options, style) {
-	var target = getElement(options.insertInto)
-
-	if (!target) {
-		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
-	}
-
-	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
-
-	if (options.insertAt === "top") {
-		if (!lastStyleElementInsertedAtTop) {
-			target.insertBefore(style, target.firstChild);
-		} else if (lastStyleElementInsertedAtTop.nextSibling) {
-			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
-		} else {
-			target.appendChild(style);
-		}
-		stylesInsertedAtTop.push(style);
-	} else if (options.insertAt === "bottom") {
-		target.appendChild(style);
-	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
-		var nextSibling = getElement(options.insertInto + " " + options.insertAt.before);
-		target.insertBefore(style, nextSibling);
-	} else {
-		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
-	}
-}
-
-function removeStyleElement (style) {
-	if (style.parentNode === null) return false;
-	style.parentNode.removeChild(style);
-
-	var idx = stylesInsertedAtTop.indexOf(style);
-	if(idx >= 0) {
-		stylesInsertedAtTop.splice(idx, 1);
-	}
-}
-
-function createStyleElement (options) {
-	var style = document.createElement("style");
-
-	if(options.attrs.type === undefined) {
-		options.attrs.type = "text/css";
-	}
-
-	addAttrs(style, options.attrs);
-	insertStyleElement(options, style);
-
-	return style;
-}
-
-function createLinkElement (options) {
-	var link = document.createElement("link");
-
-	if(options.attrs.type === undefined) {
-		options.attrs.type = "text/css";
-	}
-	options.attrs.rel = "stylesheet";
-
-	addAttrs(link, options.attrs);
-	insertStyleElement(options, link);
-
-	return link;
-}
-
-function addAttrs (el, attrs) {
-	Object.keys(attrs).forEach(function (key) {
-		el.setAttribute(key, attrs[key]);
-	});
-}
-
-function addStyle (obj, options) {
-	var style, update, remove, result;
-
-	// If a transform function was defined, run it on the css
-	if (options.transform && obj.css) {
-	    result = options.transform(obj.css);
-
-	    if (result) {
-	    	// If transform returns a value, use that instead of the original css.
-	    	// This allows running runtime transformations on the css.
-	    	obj.css = result;
-	    } else {
-	    	// If the transform function returns a falsy value, don't add this css.
-	    	// This allows conditional loading of css
-	    	return function() {
-	    		// noop
-	    	};
-	    }
-	}
-
-	if (options.singleton) {
-		var styleIndex = singletonCounter++;
-
-		style = singleton || (singleton = createStyleElement(options));
-
-		update = applyToSingletonTag.bind(null, style, styleIndex, false);
-		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-
-	} else if (
-		obj.sourceMap &&
-		typeof URL === "function" &&
-		typeof URL.createObjectURL === "function" &&
-		typeof URL.revokeObjectURL === "function" &&
-		typeof Blob === "function" &&
-		typeof btoa === "function"
-	) {
-		style = createLinkElement(options);
-		update = updateLink.bind(null, style, options);
-		remove = function () {
-			removeStyleElement(style);
-
-			if(style.href) URL.revokeObjectURL(style.href);
-		};
-	} else {
-		style = createStyleElement(options);
-		update = applyToTag.bind(null, style);
-		remove = function () {
-			removeStyleElement(style);
-		};
-	}
-
-	update(obj);
-
-	return function updateStyle (newObj) {
-		if (newObj) {
-			if (
-				newObj.css === obj.css &&
-				newObj.media === obj.media &&
-				newObj.sourceMap === obj.sourceMap
-			) {
-				return;
-			}
-
-			update(obj = newObj);
-		} else {
-			remove();
-		}
-	};
-}
-
-var replaceText = (function () {
-	var textStore = [];
-
-	return function (index, replacement) {
-		textStore[index] = replacement;
-
-		return textStore.filter(Boolean).join('\n');
-	};
-})();
-
-function applyToSingletonTag (style, index, remove, obj) {
-	var css = remove ? "" : obj.css;
-
-	if (style.styleSheet) {
-		style.styleSheet.cssText = replaceText(index, css);
-	} else {
-		var cssNode = document.createTextNode(css);
-		var childNodes = style.childNodes;
-
-		if (childNodes[index]) style.removeChild(childNodes[index]);
-
-		if (childNodes.length) {
-			style.insertBefore(cssNode, childNodes[index]);
-		} else {
-			style.appendChild(cssNode);
-		}
-	}
-}
-
-function applyToTag (style, obj) {
-	var css = obj.css;
-	var media = obj.media;
-
-	if(media) {
-		style.setAttribute("media", media)
-	}
-
-	if(style.styleSheet) {
-		style.styleSheet.cssText = css;
-	} else {
-		while(style.firstChild) {
-			style.removeChild(style.firstChild);
-		}
-
-		style.appendChild(document.createTextNode(css));
-	}
-}
-
-function updateLink (link, options, obj) {
-	var css = obj.css;
-	var sourceMap = obj.sourceMap;
-
-	/*
-		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
-		and there is no publicPath defined then lets turn convertToAbsoluteUrls
-		on by default.  Otherwise default to the convertToAbsoluteUrls option
-		directly
-	*/
-	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
-
-	if (options.convertToAbsoluteUrls || autoFixUrls) {
-		css = fixUrls(css);
-	}
-
-	if (sourceMap) {
-		// http://stackoverflow.com/a/26603875
-		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-	}
-
-	var blob = new Blob([css], { type: "text/css" });
-
-	var oldSrc = link.href;
-
-	link.href = URL.createObjectURL(blob);
-
-	if(oldSrc) URL.revokeObjectURL(oldSrc);
-}
-
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(42);
-
-
-/***/ }),
-/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_hot_loader__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App__ = __webpack_require__(56);
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App__ = __webpack_require__(54);
 
 
 
@@ -5850,67 +4964,9 @@ if (false) {
     render(NewApp);
   });
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(render, 'render', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/client/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(15)(module)))
 
 /***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-function _interopDefault(t) {
-  return t && "object" == (typeof t === "undefined" ? "undefined" : _typeof(t)) && "default" in t ? t.default : t;
-}Object.defineProperty(exports, "__esModule", { value: !0 });var React = _interopDefault(__webpack_require__(4)),
-    classCallCheck = function classCallCheck(t, e) {
-  if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function");
-},
-    inherits = function inherits(t, e) {
-  if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function, not " + (typeof e === "undefined" ? "undefined" : _typeof(e)));t.prototype = Object.create(e && e.prototype, { constructor: { value: t, enumerable: !1, writable: !0, configurable: !0 } }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e);
-},
-    possibleConstructorReturn = function possibleConstructorReturn(t, e) {
-  if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return !e || "object" != (typeof e === "undefined" ? "undefined" : _typeof(e)) && "function" != typeof e ? t : e;
-},
-    AppContainer = function (t) {
-  function e() {
-    return classCallCheck(this, e), possibleConstructorReturn(this, t.apply(this, arguments));
-  }return inherits(e, t), e.prototype.render = function () {
-    return React.Children.only(this.props.children);
-  }, e;
-}(React.Component),
-    hot_prod = function hot_prod() {
-  return function (t) {
-    return t;
-  };
-},
-    areComponentsEqual = function areComponentsEqual(t, e) {
-  return t === e;
-},
-    setConfig = function setConfig() {},
-    cold = function cold(t) {
-  return t;
-};exports.AppContainer = AppContainer, exports.hot = hot_prod, exports.areComponentsEqual = areComponentsEqual, exports.setConfig = setConfig, exports.cold = cold;
-
-/***/ }),
-/* 44 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5930,7 +4986,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var k = __webpack_require__(8),
     n = __webpack_require__(9),
     p = __webpack_require__(10),
-    q = __webpack_require__(7),
+    q = __webpack_require__(5),
     r = "function" === typeof Symbol && Symbol.for,
     t = r ? Symbol.for("react.element") : 60103,
     u = r ? Symbol.for("react.portal") : 60106,
@@ -6046,7 +5102,7 @@ var X = { Children: { map: function map(a, b, e) {
     Z = Y && X || Y;module.exports = Z.default ? Z.default : Z;
 
 /***/ }),
-/* 45 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6070,9 +5126,9 @@ if (process.env.NODE_ENV !== "production") {
     var _assign = __webpack_require__(8);
     var invariant = __webpack_require__(9);
     var emptyObject = __webpack_require__(10);
-    var warning = __webpack_require__(21);
-    var emptyFunction = __webpack_require__(7);
-    var checkPropTypes = __webpack_require__(22);
+    var warning = __webpack_require__(20);
+    var emptyFunction = __webpack_require__(5);
+    var checkPropTypes = __webpack_require__(21);
 
     // TODO: this is special because it gets imported during build.
 
@@ -7532,14 +6588,14 @@ if (process.env.NODE_ENV !== "production") {
     module.exports = react;
   })();
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 46 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -7548,45 +6604,16 @@ if (process.env.NODE_ENV !== "production") {
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(ReactPropTypesSecret, 'ReactPropTypesSecret', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/prop-types/lib/ReactPropTypesSecret.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 47 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(process) {
 
 function checkDCE() {
   /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
@@ -7617,34 +6644,18 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(48);
+  module.exports = __webpack_require__(44);
 } else {
-  module.exports = __webpack_require__(51);
+  module.exports = __webpack_require__(47);
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(checkDCE, 'checkDCE', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 48 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/** @license React v16.4.1
+/** @license React v16.4.1
  * react-dom.production.min.js
  *
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -7660,20 +6671,14 @@ if (process.env.NODE_ENV === 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 var aa = __webpack_require__(9),
-    ba = __webpack_require__(4),
-    m = __webpack_require__(23),
+    ba = __webpack_require__(2),
+    m = __webpack_require__(22),
     p = __webpack_require__(8),
-    v = __webpack_require__(7),
-    da = __webpack_require__(24),
-    ea = __webpack_require__(25),
-    fa = __webpack_require__(26),
+    v = __webpack_require__(5),
+    da = __webpack_require__(23),
+    ea = __webpack_require__(24),
+    fa = __webpack_require__(25),
     ha = __webpack_require__(10);
 function A(a) {
   for (var b = arguments.length - 1, c = "https://reactjs.org/docs/error-decoder.html?invariant=" + a, d = 0; d < b; d++) {
@@ -9736,480 +8741,13 @@ var vi = { createPortal: ui, findDOMNode: function findDOMNode(a) {
   } };ki({ findFiberByHostInstance: Na, bundleType: 0, version: "16.4.1", rendererPackageName: "react-dom" });
 var Ai = { default: vi },
     Bi = Ai && vi || Ai;module.exports = Bi.default ? Bi.default : Bi;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(A, "A", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ia, "ia", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(B, "B", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ka, "ka", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(la, "la", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ma, "ma", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(na, "na", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qa, "qa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(oa, "oa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pa, "pa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ra, "ra", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sa, "sa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ta, "ta", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ua, "ua", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(va, "va", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wa, "wa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xa, "xa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ya, "ya", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(za, "za", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Aa, "Aa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ba, "Ba", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ca, "Ca", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Da, "Da", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ea, "Ea", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fa, "Fa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ga, "Ga", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ha, "Ha", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ia, "Ia", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ja, "Ja", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ka, "Ka", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(La, "La", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(C, "C", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ma, "Ma", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Na, "Na", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Oa, "Oa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pa, "Pa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qa, "Qa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(F, "F", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ra, "Ra", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sa, "Sa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ta, "Ta", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ua, "Ua", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Va, "Va", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xa, "Xa", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ya, "Ya", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Za, "Za", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($a, "$a", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ab, "ab", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bb, "bb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cb, "cb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(db, "db", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(eb, "eb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fb, "fb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gb, "gb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hb, "hb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ib, "ib", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jb, "jb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kb, "kb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lb, "lb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(G, "G", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mb, "mb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nb, "nb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ob, "ob", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pb, "pb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(H, "H", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rb, "rb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sb, "sb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qb, "qb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tb, "tb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ub, "ub", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vb, "vb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wb, "wb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xb, "xb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yb, "yb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zb, "zb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ab, "Ab", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bb, "Bb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cb, "Cb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Db, "Db", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Eb, "Eb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fb, "Fb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gb, "Gb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hb, "Hb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ib, "Ib", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Jb, "Jb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kb, "Kb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Lb, "Lb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Mb, "Mb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nb, "Nb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ob, "Ob", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pb, "Pb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qb, "Qb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rb, "Rb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sb, "Sb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Tb, "Tb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ub, "Ub", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vb, "Vb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wb, "Wb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xb, "Xb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yb, "Yb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zb, "Zb", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($b, "$b", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ac, "ac", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bc, "bc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cc, "cc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(dc, "dc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ec, "ec", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fc, "fc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gc, "gc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hc, "hc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ic, "ic", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jc, "jc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kc, "kc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lc, "lc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mc, "mc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pc, "pc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qc, "qc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rc, "rc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sc, "sc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tc, "tc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(uc, "uc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vc, "vc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wc, "wc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xc, "xc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zc, "zc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ac, "Ac", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bc, "Bc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cc, "Cc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(I, "I", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(J, "J", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Dc, "Dc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ec, "Ec", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fc, "Fc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gc, "Gc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hc, "Hc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Jc, "Jc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kc, "Kc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Mc, "Mc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Lc, "Lc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ic, "Ic", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nc, "Nc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Oc, "Oc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pc, "Pc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qc, "Qc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rc, "Rc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sc, "Sc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Tc, "Tc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Uc, "Uc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vc, "Vc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wc, "Wc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xc, "Xc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yc, "Yc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zc, "Zc", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($c, "$c", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ad, "ad", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bd, "bd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cd, "cd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(dd, "dd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ed, "ed", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fd, "fd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gd, "gd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hd, "hd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(id, "id", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jd, "jd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kd, "kd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ld, "ld", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(md, "md", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nd, "nd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(od, "od", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pd, "pd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qd, "qd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rd, "rd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sd, "sd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(td, "td", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ud, "ud", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vd, "vd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wd, "wd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xd, "xd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yd, "yd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zd, "zd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ad, "Ad", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bd, "Bd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cd, "Cd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Dd, "Dd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ed, "Ed", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fd, "Fd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gd, "Gd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hd, "Hd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Id, "Id", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(K, "K", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Md, "Md", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kd, "Kd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ld, "Ld", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nd, "Nd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Od, "Od", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pd, "Pd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qd, "Qd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rd, "Rd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sd, "Sd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Td, "Td", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ud, "Ud", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vd, "Vd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wd, "Wd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xd, "Xd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yd, "Yd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zd, "Zd", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($d, "$d", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ae, "ae", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(be, "be", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ce, "ce", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(de, "de", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ee, "ee", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fe, "fe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ge, "ge", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(he, "he", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ie, "ie", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(je, "je", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ke, "ke", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(L, "L", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(le, "le", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(me, "me", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ne, "ne", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(oe, "oe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pe, "pe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qe, "qe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(re, "re", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(se, "se", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ue, "ue", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(te, "te", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ve, "ve", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(we, "we", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xe, "xe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ye, "ye", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ze, "ze", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ae, "Ae", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Be, "Be", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ce, "Ce", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(De, "De", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ee, "Ee", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fe, "Fe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ge, "Ge", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(He, "He", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ie, "Ie", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Je, "Je", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ke, "Ke", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Le, "Le", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Me, "Me", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ne, "Ne", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Oe, "Oe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pe, "Pe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qe, "Qe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Re, "Re", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Se, "Se", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Te, "Te", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ue, "Ue", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ve, "Ve", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(We, "We", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xe, "Xe", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ye, "Ye", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ze, "Ze", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($e, "$e", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(af, "af", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bf, "bf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cf, "cf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(df, "df", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ef, "ef", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ff, "ff", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gf, "gf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hf, "hf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jf, "jf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kf, "kf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lf, "lf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mf, "mf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(M, "M", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(N, "N", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nf, "nf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(O, "O", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(of, "of", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pf, "pf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rf, "rf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qf, "qf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sf, "sf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tf, "tf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(uf, "uf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vf, "vf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wf, "wf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xf, "xf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yf, "yf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zf, "zf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Af, "Af", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bf, "Bf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cf, "Cf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Df, "Df", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ef, "Ef", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ff, "Ff", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gf, "Gf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hf, "Hf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(If, "If", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Jf, "Jf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kf, "Kf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Lf, "Lf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Mf, "Mf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nf, "Nf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Of, "Of", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pf, "Pf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qf, "Qf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rf, "Rf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sf, "Sf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Tf, "Tf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Uf, "Uf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vf, "Vf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wf, "Wf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xf, "Xf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yf, "Yf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zf, "Zf", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($f, "$f", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ag, "ag", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bg, "bg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cg, "cg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(dg, "dg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(eg, "eg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fg, "fg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gg, "gg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ig, "ig", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jg, "jg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kg, "kg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lg, "lg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pg, "pg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qg, "qg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rg, "rg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sg, "sg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tg, "tg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ug, "ug", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vg, "vg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wg, "wg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xg, "xg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yg, "yg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zg, "zg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ag, "Ag", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bg, "Bg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cg, "Cg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Dg, "Dg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Eg, "Eg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fg, "Fg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gg, "Gg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hg, "Hg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Q, "Q", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ig, "Ig", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Jg, "Jg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kg, "Kg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Lg, "Lg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Mg, "Mg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qg, "Qg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(R, "R", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rg, "Rg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sg, "Sg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Tg, "Tg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ug, "Ug", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vg, "Vg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wg, "Wg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xg, "Xg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yg, "Yg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($g, "$g", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bh, "bh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ch, "ch", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ah, "ah", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(dh, "dh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(eh, "eh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gh, "gh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ih, "ih", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jh, "jh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kh, "kh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lh, "lh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mh, "mh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nh, "nh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(oh, "oh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ph, "ph", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(S, "S", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qh, "qh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(T, "T", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rh, "rh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sh, "sh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(U, "U", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(th, "th", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(uh, "uh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hh, "hh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vh, "vh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wh, "wh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xh, "xh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yh, "yh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zg, "Zg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ch, "Ch", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ng, "ng", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(og, "og", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mg, "mg", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hh, "Hh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ih, "Ih", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Jh, "Jh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(V, "V", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kh, "Kh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Lh, "Lh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(W, "W", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(X, "X", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Y, "Y", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Eh, "Eh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Mh, "Mh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nh, "Nh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Oh, "Oh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ph, "Ph", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Z, "Z", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qh, "Qh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Dh, "Dh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rh, "Rh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gh, "Gh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fh, "Fh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sh, "Sh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Th, "Th", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ah, "Ah", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xh, "Xh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Uh, "Uh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wh, "Wh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yh, "Yh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($h, "$h", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zh, "Zh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vh, "Vh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ai, "ai", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zh, "zh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fh, "fh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bh, "Bh", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bi, "bi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ci, "ci", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(di, "di", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ei, "ei", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fi, "fi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gi, "gi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hi, "hi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ii, "ii", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ji, "ji", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ki, "ki", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(li, "li", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ni, "ni", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(oi, "oi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pi, "pi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qi, "qi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ri, "ri", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(si, "si", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ti, "ti", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ui, "ui", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vi, "vi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ai, "Ai", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bi, "Bi", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 49 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -10220,13 +8758,7 @@ var Ai = { default: vi },
  * @typechecks
  */
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var isNode = __webpack_require__(50);
+var isNode = __webpack_require__(46);
 
 /**
  * @param {*} object The object to check.
@@ -10237,30 +8769,13 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(isTextNode, 'isTextNode', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/isTextNode.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 50 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -10278,12 +8793,6 @@ module.exports = isTextNode;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 function isNode(object) {
   var doc = object ? object.ownerDocument || object : document;
   var defaultView = doc.defaultView || window;
@@ -10291,26 +8800,9 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(isNode, 'isNode', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/isNode.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 51 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10321,7 +8813,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var invariant=__webpack_require__(9);var React=__webpack_require__(4);var warning=__webpack_require__(21);var ExecutionEnvironment=__webpack_require__(23);var _assign=__webpack_require__(8);var emptyFunction=__webpack_require__(7);var checkPropTypes=__webpack_require__(22);var getActiveElement=__webpack_require__(24);var shallowEqual=__webpack_require__(25);var containsNode=__webpack_require__(26);var emptyObject=__webpack_require__(10);var hyphenateStyleName=__webpack_require__(52);var camelizeStyleName=__webpack_require__(54);// Relying on the `invariant()` implementation lets us
+ */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var invariant=__webpack_require__(9);var React=__webpack_require__(2);var warning=__webpack_require__(20);var ExecutionEnvironment=__webpack_require__(22);var _assign=__webpack_require__(8);var emptyFunction=__webpack_require__(5);var checkPropTypes=__webpack_require__(21);var getActiveElement=__webpack_require__(23);var shallowEqual=__webpack_require__(24);var containsNode=__webpack_require__(25);var emptyObject=__webpack_require__(10);var hyphenateStyleName=__webpack_require__(48);var camelizeStyleName=__webpack_require__(50);// Relying on the `invariant()` implementation lets us
 // have preserve the format and params in the www builds.
 !React?invariant(false,'ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.'):void 0;var invokeGuardedCallback=function invokeGuardedCallback(name,func,context,a,b,c,d,e,f){this._hasCaughtError=false;this._caughtError=null;var funcArgs=Array.prototype.slice.call(arguments,3);try{func.apply(context,funcArgs);}catch(error){this._caughtError=error;this._hasCaughtError=true;}};{// In DEV mode, we swap out invokeGuardedCallback for a special version
 // that plays more nicely with the browser's DevTools. The idea is to preserve
@@ -13473,14 +11965,14 @@ if(navigator.userAgent.indexOf('Chrome')>-1&&navigator.userAgent.indexOf('Edge')
 if(/^(https?|file):$/.test(protocol)){console.info('%cDownload the React DevTools '+'for a better development experience: '+'https://fb.me/react-devtools'+(protocol==='file:'?'\nYou might need to use a local HTTP server (instead of file://): '+'https://fb.me/react-devtools-faq':''),'font-weight:bold');}}}}var ReactDOM$2=Object.freeze({default:ReactDOM});var ReactDOM$3=ReactDOM$2&&ReactDOM||ReactDOM$2;// TODO: decide on the top-level export form.
 // This is hacky but makes it work with both Rollup and Jest.
 var reactDom=ReactDOM$3.default?ReactDOM$3.default:ReactDOM$3;module.exports=reactDom;})();}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 52 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -13491,13 +11983,7 @@ var reactDom=ReactDOM$3.default?ReactDOM$3.default:ReactDOM$3;module.exports=rea
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var hyphenate = __webpack_require__(53);
+var hyphenate = __webpack_require__(49);
 
 var msPattern = /^ms-/;
 
@@ -13522,31 +12008,13 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(msPattern, 'msPattern', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/hyphenateStyleName.js');
-  reactHotLoader.register(hyphenateStyleName, 'hyphenateStyleName', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/hyphenateStyleName.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 53 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -13556,12 +12024,6 @@ module.exports = hyphenateStyleName;
  *
  * @typechecks
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var _uppercasePattern = /([A-Z])/g;
 
@@ -13582,31 +12044,13 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_uppercasePattern, '_uppercasePattern', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/hyphenate.js');
-  reactHotLoader.register(hyphenate, 'hyphenate', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/hyphenate.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 54 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -13617,13 +12061,7 @@ module.exports = hyphenate;
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var camelize = __webpack_require__(55);
+var camelize = __webpack_require__(51);
 
 var msPattern = /^-ms-/;
 
@@ -13649,31 +12087,13 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(msPattern, 'msPattern', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/camelizeStyleName.js');
-  reactHotLoader.register(camelizeStyleName, 'camelizeStyleName', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/camelizeStyleName.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 55 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -13683,12 +12103,6 @@ module.exports = camelizeStyleName;
  *
  * @typechecks
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var _hyphenPattern = /-(.)/g;
 
@@ -13708,47 +12122,77 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_hyphenPattern, "_hyphenPattern", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/camelize.js");
-  reactHotLoader.register(camelize, "camelize", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/fbjs/lib/camelize.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 56 */
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (true) {
+  module.exports = __webpack_require__(53);
+} else {
+  module.exports = require('./dist/react-hot-loader.development.js');
+}
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _interopDefault(t) {
+  return t && "object" == (typeof t === "undefined" ? "undefined" : _typeof(t)) && "default" in t ? t.default : t;
+}Object.defineProperty(exports, "__esModule", { value: !0 });var React = _interopDefault(__webpack_require__(2)),
+    classCallCheck = function classCallCheck(t, e) {
+  if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function");
+},
+    inherits = function inherits(t, e) {
+  if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function, not " + (typeof e === "undefined" ? "undefined" : _typeof(e)));t.prototype = Object.create(e && e.prototype, { constructor: { value: t, enumerable: !1, writable: !0, configurable: !0 } }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e);
+},
+    possibleConstructorReturn = function possibleConstructorReturn(t, e) {
+  if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return !e || "object" != (typeof e === "undefined" ? "undefined" : _typeof(e)) && "function" != typeof e ? t : e;
+},
+    AppContainer = function (t) {
+  function e() {
+    return classCallCheck(this, e), possibleConstructorReturn(this, t.apply(this, arguments));
+  }return inherits(e, t), e.prototype.render = function () {
+    return React.Children.only(this.props.children);
+  }, e;
+}(React.Component),
+    hot_prod = function hot_prod() {
+  return function (t) {
+    return t;
+  };
+},
+    areComponentsEqual = function areComponentsEqual(t, e) {
+  return t === e;
+},
+    setConfig = function setConfig() {},
+    cold = function cold(t) {
+  return t;
+};exports.AppContainer = AppContainer, exports.hot = hot_prod, exports.areComponentsEqual = areComponentsEqual, exports.setConfig = setConfig, exports.cold = cold;
+
+/***/ }),
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_socket_io_client__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_socket_io_client__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_socket_io_client__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_css__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_css__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__App_css__);
-throw new Error("Cannot find module \"./MessageForm\"");
-throw new Error("Cannot find module \"./MessageList\"");
-throw new Error("Cannot find module \"./UsersList\"");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__UserForm__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MessageForm__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__MessageList__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__UsersList__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__UserForm__ = __webpack_require__(94);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -13834,7 +12278,7 @@ var App = function (_Component) {
     value: function renderLayout() {
       var _this3 = this;
 
-      render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.App },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -13854,16 +12298,16 @@ var App = function (_Component) {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.AppBody },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__UsersList___default.a, {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__UsersList__["a" /* default */], {
             users: this.state.users
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.MessageWrapper },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__MessageList___default.a, {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__MessageList__["a" /* default */], {
               messages: this.state.messages
             }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__MessageForm___default.a, {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__MessageForm__["a" /* default */], {
               onMessageSubmit: function onMessageSubmit(message) {
                 return _this3.handleMessageSubmit(message);
               },
@@ -13871,7 +12315,7 @@ var App = function (_Component) {
             })
           )
         )
-      ));
+      );
     }
   }, {
     key: 'renderUserForm',
@@ -13882,13 +12326,6 @@ var App = function (_Component) {
           return _this4.handleUserSubmit(name);
         } });
     }
-  }, {
-    key: '__reactstandin__regenerateByEval',
-    // @ts-ignore
-    value: function __reactstandin__regenerateByEval(key, code) {
-      // @ts-ignore
-      this[key] = eval(code);
-    }
   }]);
 
   return App;
@@ -13896,47 +12333,21 @@ var App = function (_Component) {
 
 ;
 
-var _default = App;
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(socket, 'socket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/client/App.js');
-  reactHotLoader.register(App, 'App', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/client/App.js');
-  reactHotLoader.register(_default, 'default', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/client/App.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(15)(module)))
+/* harmony default export */ __webpack_exports__["a"] = (App);
 
 /***/ }),
-/* 57 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var url = __webpack_require__(58);
-var parser = __webpack_require__(17);
-var Manager = __webpack_require__(29);
+var url = __webpack_require__(56);
+var parser = __webpack_require__(16);
+var Manager = __webpack_require__(28);
 var debug = __webpack_require__(11)('socket.io-client');
 
 /**
@@ -14020,43 +12431,19 @@ exports.connect = lookup;
  * @api public
  */
 
-exports.Manager = __webpack_require__(29);
-exports.Socket = __webpack_require__(36);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/index.js');
-  reactHotLoader.register(cache, 'cache', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/index.js');
-  reactHotLoader.register(lookup, 'lookup', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
+exports.Manager = __webpack_require__(28);
+exports.Socket = __webpack_require__(35);
 
 /***/ }),
-/* 58 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* WEBPACK VAR INJECTION */(function(global) {
 /**
  * Module dependencies.
  */
 
-var parseuri = __webpack_require__(27);
+var parseuri = __webpack_require__(26);
 var debug = __webpack_require__(11)('socket.io-client:url');
 
 /**
@@ -14126,34 +12513,12 @@ function url(uri, loc) {
 
   return obj;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/url.js');
-  reactHotLoader.register(url, 'url', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/lib/url.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 59 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -14167,7 +12532,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(16);
+exports.humanize = __webpack_require__(15);
 
 /**
  * Active `debug` instances.
@@ -14380,41 +12745,12 @@ function coerce(val) {
   if (val instanceof Error) return val.stack || val.message;
   return val;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(selectColor, 'selectColor', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(createDebug, 'createDebug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(destroy, 'destroy', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enable, 'enable', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(disable, 'disable', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enabled, 'enabled', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(coerce, 'coerce', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 60 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * This is the web browser implementation of `debug()`.
@@ -14422,7 +12758,7 @@ function coerce(val) {
  * Expose `debug()` as the module.
  */
 
-exports = module.exports = __webpack_require__(61);
+exports = module.exports = __webpack_require__(59);
 exports.log = log;
 exports.formatArgs = formatArgs;
 exports.save = save;
@@ -14588,38 +12924,12 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(useColors, 'useColors', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(formatArgs, 'formatArgs', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(log, 'log', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(save, 'save', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(load, 'load', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(localstorage, 'localstorage', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 61 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -14633,7 +12943,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(16);
+exports.humanize = __webpack_require__(15);
 
 /**
  * Active `debug` instances.
@@ -14846,41 +13156,12 @@ function coerce(val) {
   if (val instanceof Error) return val.stack || val.message;
   return val;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(selectColor, 'selectColor', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(createDebug, 'createDebug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(destroy, 'destroy', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enable, 'enable', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(disable, 'disable', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enabled, 'enabled', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(coerce, 'coerce', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 62 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*global Blob,File*/
 
@@ -14888,8 +13169,8 @@ function coerce(val) {
  * Module requirements
  */
 
-var isArray = __webpack_require__(18);
-var isBuf = __webpack_require__(28);
+var isArray = __webpack_require__(17);
+var isBuf = __webpack_require__(27);
 var toString = Object.prototype.toString;
 var withNativeBlob = typeof global.Blob === 'function' || toString.call(global.Blob) === '[object BlobConstructor]';
 var withNativeFile = typeof global.File === 'function' || toString.call(global.File) === '[object FileConstructor]';
@@ -15024,34 +13305,14 @@ exports.removeBlobs = function (data, callback) {
     callback(bloblessData);
   }
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(toString, 'toString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(withNativeBlob, 'withNativeBlob', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(withNativeFile, 'withNativeFile', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(_deconstructPacket, '_deconstructPacket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(_reconstructPacket, '_reconstructPacket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/socket.io-parser/binary.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 63 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-module.exports = __webpack_require__(64);
+module.exports = __webpack_require__(62);
 
 /**
  * Exports parser
@@ -15059,30 +13320,24 @@ module.exports = __webpack_require__(64);
  * @api public
  *
  */
-module.exports.parser = __webpack_require__(6);
+module.exports.parser = __webpack_require__(4);
 
 /***/ }),
-/* 64 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var transports = __webpack_require__(30);
-var Emitter = __webpack_require__(5);
+var transports = __webpack_require__(29);
+var Emitter = __webpack_require__(3);
 var debug = __webpack_require__(14)('engine.io-client:socket');
-var index = __webpack_require__(35);
-var parser = __webpack_require__(6);
-var parseuri = __webpack_require__(27);
+var index = __webpack_require__(34);
+var parser = __webpack_require__(4);
+var parseuri = __webpack_require__(26);
 var parseqs = __webpack_require__(12);
 
 /**
@@ -15212,9 +13467,9 @@ Socket.protocol = parser.protocol; // this is an int
  */
 
 Socket.Socket = Socket;
-Socket.Transport = __webpack_require__(20);
-Socket.transports = __webpack_require__(30);
-Socket.parser = __webpack_require__(6);
+Socket.Transport = __webpack_require__(19);
+Socket.transports = __webpack_require__(29);
+Socket.parser = __webpack_require__(4);
 
 /**
  * Creates transport of the given type.
@@ -15805,28 +14060,10 @@ Socket.prototype.filterUpgrades = function (upgrades) {
   }
   return filteredUpgrades;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/socket.js');
-  reactHotLoader.register(Socket, 'Socket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/socket.js');
-  reactHotLoader.register(clone, 'clone', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/socket.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 65 */
+/* 63 */
 /***/ (function(module, exports) {
 
 
@@ -15847,22 +14084,16 @@ try {
 }
 
 /***/ }),
-/* 66 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module requirements.
  */
 
-var XMLHttpRequest = __webpack_require__(19);
-var Polling = __webpack_require__(31);
-var Emitter = __webpack_require__(5);
+var XMLHttpRequest = __webpack_require__(18);
+var Polling = __webpack_require__(30);
+var Emitter = __webpack_require__(3);
 var inherit = __webpack_require__(13);
 var debug = __webpack_require__(14)('engine.io-client:polling-xhr');
 
@@ -16267,30 +14498,10 @@ function unloadHandler() {
     }
   }
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(empty, 'empty', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(XHR, 'XHR', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(Request, 'Request', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(unloadHandler, 'unloadHandler', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 67 */
+/* 65 */
 /***/ (function(module, exports) {
 
 
@@ -16314,11 +14525,11 @@ module.exports = Object.keys || function keys(obj) {
 };
 
 /***/ }),
-/* 68 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, global) {/*!
+/* WEBPACK VAR INJECTION */(function(global) {/*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
@@ -16328,15 +14539,9 @@ module.exports = Object.keys || function keys(obj) {
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var base64 = __webpack_require__(69);
-var ieee754 = __webpack_require__(70);
-var isArray = __webpack_require__(71);
+var base64 = __webpack_require__(67);
+var ieee754 = __webpack_require__(68);
+var isArray = __webpack_require__(69);
 
 exports.Buffer = Buffer;
 exports.SlowBuffer = SlowBuffer;
@@ -18061,85 +16266,14 @@ function blitBuffer(src, dst, offset, length) {
 function isnan(val) {
   return val !== val; // eslint-disable-line no-self-compare
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(typedArraySupport, 'typedArraySupport', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(kMaxLength, 'kMaxLength', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(createBuffer, 'createBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(Buffer, 'Buffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(from, 'from', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(assertSize, 'assertSize', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(alloc, 'alloc', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(allocUnsafe, 'allocUnsafe', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(fromString, 'fromString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(fromArrayLike, 'fromArrayLike', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(fromArrayBuffer, 'fromArrayBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(fromObject, 'fromObject', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(checked, 'checked', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(SlowBuffer, 'SlowBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(byteLength, 'byteLength', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(slowToString, 'slowToString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(swap, 'swap', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(bidirectionalIndexOf, 'bidirectionalIndexOf', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(arrayIndexOf, 'arrayIndexOf', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(hexWrite, 'hexWrite', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(utf8Write, 'utf8Write', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(asciiWrite, 'asciiWrite', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(latin1Write, 'latin1Write', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(base64Write, 'base64Write', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(ucs2Write, 'ucs2Write', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(base64Slice, 'base64Slice', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(utf8Slice, 'utf8Slice', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(MAX_ARGUMENTS_LENGTH, 'MAX_ARGUMENTS_LENGTH', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(decodeCodePointsArray, 'decodeCodePointsArray', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(asciiSlice, 'asciiSlice', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(latin1Slice, 'latin1Slice', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(hexSlice, 'hexSlice', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(utf16leSlice, 'utf16leSlice', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(checkOffset, 'checkOffset', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(checkInt, 'checkInt', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(objectWriteUInt16, 'objectWriteUInt16', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(objectWriteUInt32, 'objectWriteUInt32', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(checkIEEE754, 'checkIEEE754', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(writeFloat, 'writeFloat', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(writeDouble, 'writeDouble', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(INVALID_BASE64_RE, 'INVALID_BASE64_RE', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(base64clean, 'base64clean', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(stringtrim, 'stringtrim', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(toHex, 'toHex', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(utf8ToBytes, 'utf8ToBytes', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(asciiToBytes, 'asciiToBytes', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(utf16leToBytes, 'utf16leToBytes', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(base64ToBytes, 'base64ToBytes', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(blitBuffer, 'blitBuffer', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  reactHotLoader.register(isnan, 'isnan', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 69 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 exports.byteLength = byteLength;
 exports.toByteArray = toByteArray;
@@ -18260,38 +16394,9 @@ function fromByteArray(uint8) {
 
   return parts.join('');
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(lookup, 'lookup', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(revLookup, 'revLookup', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(Arr, 'Arr', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(code, 'code', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(i, 'i', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(len, 'len', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(getLens, 'getLens', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(byteLength, 'byteLength', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(_byteLength, '_byteLength', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(toByteArray, 'toByteArray', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(tripletToBase64, 'tripletToBase64', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(encodeChunk, 'encodeChunk', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  reactHotLoader.register(fromByteArray, 'fromByteArray', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/base64-js/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 70 */
+/* 68 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -18380,40 +16485,17 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 };
 
 /***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* 69 */
+/***/ (function(module, exports) {
 
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(toString, 'toString', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/buffer/node_modules/isarray/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 72 */
+/* 70 */
 /***/ (function(module, exports) {
 
 /**
@@ -18455,14 +16537,8 @@ module.exports = function (arraybuffer, start, end) {
 };
 
 /***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
-
-    enterModule && enterModule(module);
-})();
+/* 71 */
+/***/ (function(module, exports) {
 
 module.exports = after;
 
@@ -18492,27 +16568,9 @@ function after(count, callback, err_cb) {
 }
 
 function noop() {}
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(after, 'after', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/after/index.js');
-    reactHotLoader.register(noop, 'noop', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/after/index.js');
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 74 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -18747,7 +16805,7 @@ function noop() {}
 
 	// Some AMD build optimizers, like r.js, check for specific condition patterns
 	// like the following:
-	if ("function" == 'function' && _typeof(__webpack_require__(33)) == 'object' && __webpack_require__(33)) {
+	if ("function" == 'function' && _typeof(__webpack_require__(32)) == 'object' && __webpack_require__(32)) {
 		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
 			return utf8;
 		}).call(exports, __webpack_require__, exports, module),
@@ -18769,10 +16827,37 @@ function noop() {}
 		root.utf8 = utf8;
 	}
 })(this);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(73)(module), __webpack_require__(0)))
 
 /***/ }),
-/* 75 */
+/* 73 */
+/***/ (function(module, exports) {
+
+module.exports = function (module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function () {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function get() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function get() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+/***/ }),
+/* 74 */
 /***/ (function(module, exports) {
 
 /*
@@ -18851,16 +16936,10 @@ function noop() {}
 })();
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Create a blob builder even when vendor prefixes exist
  */
 
@@ -18951,39 +17030,12 @@ module.exports = function () {
     return undefined;
   }
 }();
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(BlobBuilder, 'BlobBuilder', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/blob/index.js');
-  reactHotLoader.register(blobSupported, 'blobSupported', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/blob/index.js');
-  reactHotLoader.register(blobSupportsArrayBufferView, 'blobSupportsArrayBufferView', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/blob/index.js');
-  reactHotLoader.register(blobBuilderSupported, 'blobBuilderSupported', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/blob/index.js');
-  reactHotLoader.register(mapArrayBufferViews, 'mapArrayBufferViews', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/blob/index.js');
-  reactHotLoader.register(BlobBuilderConstructor, 'BlobBuilderConstructor', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/blob/index.js');
-  reactHotLoader.register(BlobConstructor, 'BlobConstructor', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/blob/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -18997,7 +17049,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(16);
+exports.humanize = __webpack_require__(15);
 
 /**
  * Active `debug` instances.
@@ -19210,45 +17262,17 @@ function coerce(val) {
   if (val instanceof Error) return val.stack || val.message;
   return val;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(selectColor, 'selectColor', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(createDebug, 'createDebug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(destroy, 'destroy', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enable, 'enable', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(disable, 'disable', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enabled, 'enabled', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(coerce, 'coerce', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* WEBPACK VAR INJECTION */(function(global) {
 /**
  * Module requirements.
  */
 
-var Polling = __webpack_require__(31);
+var Polling = __webpack_require__(30);
 var inherit = __webpack_require__(13);
 
 /**
@@ -19474,53 +17498,27 @@ JSONPPolling.prototype.doWrite = function (data, fn) {
     this.iframe.onload = complete;
   }
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(rNewline, 'rNewline', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(rEscapedNewline, 'rEscapedNewline', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(callbacks, 'callbacks', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(empty, 'empty', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(JSONPPolling, 'JSONPPolling', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module dependencies.
  */
 
-var Transport = __webpack_require__(20);
-var parser = __webpack_require__(6);
+var Transport = __webpack_require__(19);
+var parser = __webpack_require__(4);
 var parseqs = __webpack_require__(12);
 var inherit = __webpack_require__(13);
-var yeast = __webpack_require__(34);
+var yeast = __webpack_require__(33);
 var debug = __webpack_require__(14)('engine.io-client:websocket');
 var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
 var NodeWebSocket;
 if (typeof window === 'undefined') {
   try {
-    NodeWebSocket = __webpack_require__(80);
+    NodeWebSocket = __webpack_require__(79);
   } catch (e) {}
 }
 
@@ -19791,43 +17789,17 @@ WS.prototype.uri = function () {
 WS.prototype.check = function () {
   return !!WebSocket && !('__initialize' in WebSocket && this.name === WS.prototype.name);
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(BrowserWebSocket, 'BrowserWebSocket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(NodeWebSocket, 'NodeWebSocket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(WebSocket, 'WebSocket', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(WS, 'WS', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/engine.io-client/lib/transports/websocket.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
-
-    enterModule && enterModule(module);
-})();
+/* 80 */
+/***/ (function(module, exports) {
 
 module.exports = toArray;
 
@@ -19842,33 +17814,11 @@ function toArray(list, index) {
 
     return array;
 }
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(toArray, "toArray", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/to-array/index.js");
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 81 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Expose `Backoff`.
@@ -19953,30 +17903,13 @@ Backoff.prototype.setMax = function (max) {
 Backoff.prototype.setJitter = function (jitter) {
   this.jitter = jitter;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(Backoff, "Backoff", "C:/Users/Karolinka/Desktop/Kodilla/18-chat/node_modules/backo2/index.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(84);
+var content = __webpack_require__(83);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -19990,7 +17923,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(40)(content, options);
+var update = __webpack_require__(7)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -20022,10 +17955,10 @@ if(false) {
 }
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(39)(false);
+exports = module.exports = __webpack_require__(6)(false);
 // imports
 
 
@@ -20043,7 +17976,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports) {
 
 
@@ -20136,21 +18069,382 @@ module.exports = function (css) {
 };
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UserForm_css__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UserForm_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__UserForm_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageForm_css__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageForm_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MessageForm_css__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  enterModule && enterModule(module);
-})();
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var MessageForm = function (_Component) {
+  _inherits(MessageForm, _Component);
+
+  function MessageForm(props) {
+    _classCallCheck(this, MessageForm);
+
+    var _this = _possibleConstructorReturn(this, (MessageForm.__proto__ || Object.getPrototypeOf(MessageForm)).call(this, props));
+
+    _this.state = {
+      text: ''
+    };
+    return _this;
+  }
+
+  _createClass(MessageForm, [{
+    key: 'handleSubmit',
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      var message = {
+        from: this.props.name,
+        text: this.state.text
+      };
+      this.props.onMessageSubmit(message);
+      this.setState({
+        text: ''
+      });
+    }
+  }, {
+    key: 'changeHandler',
+    value: function changeHandler(e) {
+      this.setState({
+        text: e.target.value
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'form',
+        { className: __WEBPACK_IMPORTED_MODULE_1__MessageForm_css___default.a.MessageForm, onSubmit: function onSubmit(e) {
+            return _this2.handleSubmit(e);
+          } },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
+          className: __WEBPACK_IMPORTED_MODULE_1__MessageForm_css___default.a.MessageInput,
+          onChange: function onChange(e) {
+            return _this2.changeHandler(e);
+          },
+          value: this.state.text,
+          placeholder: 'Message'
+        })
+      );
+    }
+  }]);
+
+  return MessageForm;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (MessageForm);
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(87);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(7)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../node_modules/css-loader/index.js??ref--1-1!./MessageForm.css", function() {
+		var newContent = require("!!../node_modules/css-loader/index.js??ref--1-1!./MessageForm.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(false);
+// imports
+
+
+// module
+exports.push([module.i, "._1jMi-csxQtX0aGs1vYDoVW {\n    display: flex;\n    flex-direction: row;\n}\n\n._2CwExyCf7HbiY7VMTFtGOz {\n    flex: 1;\n    padding: 20px;\n    border: 0;\n    border-top: 1px solid #ccc;\n}", ""]);
+
+// exports
+exports.locals = {
+	"MessageForm": "_1jMi-csxQtX0aGs1vYDoVW",
+	"MessageInput": "_2CwExyCf7HbiY7VMTFtGOz"
+};
+
+/***/ }),
+/* 88 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageList_css__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageList_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MessageList_css__);
+
+
+
+var Message = function Message(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { className: __WEBPACK_IMPORTED_MODULE_1__MessageList_css___default.a.Message },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'strong',
+      null,
+      props.from,
+      ' :'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'span',
+      null,
+      props.text
+    )
+  );
+};
+
+var MessageList = function MessageList(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { className: __WEBPACK_IMPORTED_MODULE_1__MessageList_css___default.a.MessageList },
+    props.messages.map(function (message, i) {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Message, {
+        key: i,
+        from: message.from,
+        text: message.text
+      });
+    })
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (MessageList);
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(90);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(7)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../node_modules/css-loader/index.js??ref--1-1!./MessageList.css", function() {
+		var newContent = require("!!../node_modules/css-loader/index.js??ref--1-1!./MessageList.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(false);
+// imports
+
+
+// module
+exports.push([module.i, "._2UvbzmgCLZxth5pRT2XhDs {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    width: 75vw;\n    padding: 20px;\n}", ""]);
+
+// exports
+exports.locals = {
+	"MessageList": "_2UvbzmgCLZxth5pRT2XhDs"
+};
+
+/***/ }),
+/* 91 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UsersList_css__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UsersList_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__UsersList_css__);
+
+
+
+var UsersList = function UsersList(props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { className: __WEBPACK_IMPORTED_MODULE_1__UsersList_css___default.a.Users },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: __WEBPACK_IMPORTED_MODULE_1__UsersList_css___default.a.UsersOnline },
+      props.users.length,
+      ' people online'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'ul',
+      { className: __WEBPACK_IMPORTED_MODULE_1__UsersList_css___default.a.UsersList },
+      props.users.map(function (user) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'li',
+          { key: user.id, className: __WEBPACK_IMPORTED_MODULE_1__UsersList_css___default.a.UserItem },
+          user.name
+        );
+      })
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (UsersList);
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(93);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(7)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../node_modules/css-loader/index.js??ref--1-1!./UsersList.css", function() {
+		var newContent = require("!!../node_modules/css-loader/index.js??ref--1-1!./UsersList.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(false);
+// imports
+
+
+// module
+exports.push([module.i, "._16RYw-DuB3WVvAZYlpObwy {\n    display: flex;\n    flex: 1;\n    width: 25vw;\n    justify-content: flex-start;\n    flex-direction: column;\n    border-right: 1px solid #ccc;\n}\n\n._2YzLrdLd1MeWx4XQSssJpj {\n    padding: 20px;\n    text-align: center;\n    background: #ccc;\n}\n\n.y02-8vkS2VDRQHBSq-5zv {\n    margin: 0;\n    padding: 0;\n}\n\n._1QIEu1GWfORrHbUUbSWp9g {\n    list-style: none;\n    border-bottom: 1px solid #ccc;\n    padding: 20px;\n    margin: 0 0 0 20px;\n}", ""]);
+
+// exports
+exports.locals = {
+	"Users": "_16RYw-DuB3WVvAZYlpObwy",
+	"UsersOnline": "_2YzLrdLd1MeWx4XQSssJpj",
+	"UsersList": "y02-8vkS2VDRQHBSq-5zv",
+	"UserItem": "_1QIEu1GWfORrHbUUbSWp9g"
+};
+
+/***/ }),
+/* 94 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UserForm_css__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UserForm_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__UserForm_css__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -20196,11 +18490,11 @@ var UserForm = function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'form',
         { className: __WEBPACK_IMPORTED_MODULE_1__UserForm_css___default.a.UserForm, onSubmit: function onSubmit(e) {
-            return _this2.hanleSubmit(e);
+            return _this2.handleSubmit(e);
           } },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
           className: __WEBPACK_IMPORTED_MODULE_1__UserForm_css___default.a.UserInput,
-          placeHolder: 'Write your nickname and press enter',
+          placeholder: 'Write your nickname and press enter',
           onChange: function onChange(e) {
             return _this2.handleChange(e);
           },
@@ -20208,47 +18502,19 @@ var UserForm = function (_Component) {
         })
       );
     }
-  }, {
-    key: '__reactstandin__regenerateByEval',
-    // @ts-ignore
-    value: function __reactstandin__regenerateByEval(key, code) {
-      // @ts-ignore
-      this[key] = eval(code);
-    }
   }]);
 
   return UserForm;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-var _default = UserForm;
-
-
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(UserForm, 'UserForm', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/client/UserForm.js');
-  reactHotLoader.register(_default, 'default', 'C:/Users/Karolinka/Desktop/Kodilla/18-chat/client/UserForm.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(15)(module)))
+/* harmony default export */ __webpack_exports__["a"] = (UserForm);
 
 /***/ }),
-/* 87 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(88);
+var content = __webpack_require__(96);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -20262,7 +18528,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(40)(content, options);
+var update = __webpack_require__(7)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -20294,10 +18560,10 @@ if(false) {
 }
 
 /***/ }),
-/* 88 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(39)(false);
+exports = module.exports = __webpack_require__(6)(false);
 // imports
 
 

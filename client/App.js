@@ -51,7 +51,7 @@ class App extends Component {
   }
 
   renderLayout() {
-    render (
+    return (
       <div className={styles.App}>
         <div className={styles.AppHeader}>
           <div className={styles.AppTitle}>
